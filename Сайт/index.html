@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Webpage</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+</script>
+<script> $(document).ready(function(){
+    $(".btn").click(function(){
+	var el = $(event.target);
+	$("textarea").append(el.attr('name')+(', '));});
+	
+	
+  });
+</script>
+<link href="css/milk.min.css" type=text/css rel=stylesheet>
+</head>
+<body>
+<h1><p align="center">Hello world</p></h1>
+
+ <style type="text/css">
+   .block1 { 
+    width: 400;
+	height: 300;
+    background: #ccc;
+    padding: 10px;
+    border: solid 1px black; 
+    float: left;
+   }
+   .block2 { 
+    width: 700; 
+    background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+      }
+
+
+</style>
+  <div class="block1">
+
+<p class="lead">Something text</p>
+
+</div>
+
+
+  <div class="block2">
+<table border="0" width="100%">
+<TR><TD width="23%">
+<p>
+  <button class="btn btn-large btn-primary" name ='→' type="button">&#8594;</button>
+</p>
+<p>
+<button class="btn btn-large btn-primary" name="↑" type="button">&#8593;</button>
+</p>
+<p>
+
+<button class="btn btn-large btn-primary" name="↓" type="button">&#8595;</button>
+
+</p>
+
+
+<button class="btn btn-large btn-primary" name="←" type="button">&#8592;</button>
+
+</p>
+</TD><TD width="77%">
+ 
+ <div name="txt"><textarea name="text" style="height:200px;width:570px"></textarea></div>
+
+</TD></TR>
+</table>
+<table border="0" width="100%">
+<TR><TD>
+<p align="center"><button type="submit" name="send" method="Post" action="/">Отправить</button></p>
+
+</TD></TR>
+</table>
+
+</div>
+
+
+
+
+</body>
+</html>
