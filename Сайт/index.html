@@ -5,16 +5,21 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
 </script>
 <script> $(document).ready(function(){
-    $(".btn").click(function(){
+    $(".manager").click(function(){
 	var el = $(event.target);
 	$("textarea").append(el.attr('name')+(', '));});
 	
 	
   });
+  
 </script>
+
 <link href="css/milk.min.css" type=text/css rel=stylesheet>
+
+
 </head>
 <body>
+
 
  <style type="text/css">
    .block1 { 
@@ -32,6 +37,8 @@
     float: left; 
    
       }
+	  
+	  
 
 
 </style>
@@ -55,32 +62,34 @@
 <table border="0" width="100%">
 <TR><TD width="40%" valign="top">
 <p>
-  <button class="btn btn-large btn-primary" name ='&#8594;' type="button">&#8594;</button>
+  <button class="btn btn-large btn-primary manager" name ='&#8594;' type="button">&#8594;</button>
 </p>
 <p>
-<button class="btn btn-large btn-primary" name="&#8593;" type="button">&#8593;</button>
+<button class="btn btn-large btn-primary manager" name="&#8593;" type="button">&#8593;</button>
 </p>
 <p>
 
-<button class="btn btn-large btn-primary" name="&#8595;" type="button">&#8595;</button>
+<button class="btn btn-large btn-primary manager" name="&#8595;" type="button">&#8595;</button>
 
 </p>
 
 
-<button class="btn btn-large btn-primary" name="&#8592;" type="button">&#8592;</button>
+<button class="btn btn-large btn-primary manager" name="&#8592;" type="button">&#8592;</button>
 
 </p>
 </TD><TD width="75%">
 
- <div name="txt"><FORM ACTION="/" METHOD="POST"><textarea name="text" style="height:180px;width:370px"></textarea></div>
-<p align="center"><button type="submit" name="send">Отправить</button></p>
+ <div name="txt"><FORM ACTION="/" METHOD="POST"><textarea name="text" style="height:180px;width:370px"></textarea>
+<p align="center"><button type="submit" class="btn btn-large btn-block btn-primary" name="send">Отправить</button></p>
 </form>
+</div>
 </TD></TR>
 </table>
 
 </div>
 
 </TR></TD></table>
+
 
 </body>
 </html>
